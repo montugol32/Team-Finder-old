@@ -32,6 +32,7 @@ const teamSchema=new mongoose.Schema({
         information:{
                 type: String,
                 required: true
+                
         }
         
 })
