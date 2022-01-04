@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./aa.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+        <div class="container"  class="bg-primary w-50 ml-0 mr-0 mx-auto text-center" >
+                
+                <% teams.forEach(team => { %>
+                <div class="row gutters">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="card h-100">
+                        <div class="card-body">
+                                <div class="account-settings">
+                                        <div class="user-profile">
+                                                <div class="user-avatar">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
+                                                </div>
+                                                <p class="user-name"><%= team.name %></p>
+                                        
+                                        </div>
+                                        <div class="email">
+                                                <h5>Email</h5>
+                                                <h6 class="user-email"><%= team.email %></h6>   
+                                        </div>
+                                        <div class="email">
+                                                <h5>Github</h5>
+                                                <a href="<%= team.github %>" class="btn btn-secondary">github link </a>   
+                                        </div>
+                                        <div class="about">
+                                                <h5>About</h5>
+                                                <p><%= team.information %></p>
+                                        </div>
+                                        <div class="college">
+                                                <h5>College</h5>
+                                                <p><%= team.collegename %></p>
+                                        </div>
+                                        <div class="phone">
+                                                <h5>Phone</h5>
+                                                <p><%= team.phone %></p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                </div>
+              
+                </div>
+                <% }) %>
+                </div>
+        
+</body>
+</html>
