@@ -26,8 +26,7 @@
 - nodejs
 - mongodb
 - express js
-- jsonwebtoken
-- bcryptjs
+- ejs
 - bootstrap
 
 ---
